@@ -125,3 +125,65 @@ apps/extension/src/adapters/side-panel.ts Opens the side panel; takes no page in
 packages/app/src/app-platform/dapp-browser.ts Stub for hosts without a dApp browser; every call throws.
 packages/app/src/app.css Styles only.
 packages/runtime/src/dapp-error.ts Identity function that marks English-by-design error text for the lint.
+apps/extension/entrypoints/popup/index.tsx Entry point; mounts App.tsx.
+apps/extension/entrypoints/sidepanel/index.tsx Entry point; mounts App.tsx.
+apps/mobile/src/main.tsx Entry point; mounts App.tsx and remounts it when the invite gate changes.
+packages/app/src/App.tsx The shared shell; mounts the listed approval, onboarding and unlock screens; its only background calls read state and theme.
+packages/app/src/pointer-focus.ts Focus-ring styling; decides nothing.
+packages/app/src/theme.tsx Theme context and document attribute; display only.
+packages/app/src/screens/browser/index.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/browser/src/StartScreen.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/browser/src/useBrowserSites.ts A screen outside the key, signing and approval paths.
+packages/app/src/screens/collectibles/index.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/collectibles/src/CollectibleDetailView.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/collectibles/src/CollectiblesGrid.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/collectibles/src/groupCollectibles.ts Groups collectibles for display; decides nothing.
+packages/app/src/screens/connected-apps/index.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/connected-apps/src/ConnectedAppsView.tsx Grant list and revoke buttons; revocation is the listed revokeGrant handler, which also rejects pending approvals.
+packages/app/src/screens/site-wallet/index.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/site-wallet/src/SiteWalletCard.tsx The site card and its buttons; connecting goes through the listed approval window.
+packages/app/src/screens/site-wallet/src/UseGleamOnSiteView.tsx The "Use Gleam here" view; the grant itself is the listed approval window.
+packages/app/src/screens/site-wallet/src/site-card.ts Connect-picker display and permission preselection; the grant itself is the listed approval window.
+packages/app/src/screens/site-wallet/src/useActiveSite.ts Reads the active tab's site and offers dismiss/stop actions; the site-wallet decisions live in the listed handler.
+packages/app/src/screens/display-currency/index.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/display-currency/src/DisplayCurrencyView.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/home-screen/index.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/home-screen/src/HomeScreenView.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/language/index.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/language/src/LanguageView.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/lock-settings/index.tsx Route entry; mounts lock-settings/src, which is listed.
+packages/app/src/screens/main-screen/index.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/main-screen/src/MainScreenView.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/main-screen/src/ActivityDetailSheet.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/main-screen/src/MainScreenNotice.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/main-screen/src/useNotice.ts A screen outside the key, signing and approval paths.
+packages/app/src/screens/main-screen/src/notice.ts A screen outside the key, signing and approval paths.
+packages/app/src/screens/main-screen/src/usePortfolioHistory.ts A screen outside the key, signing and approval paths.
+packages/app/src/screens/activity/src/useCollectibles.ts A screen outside the key, signing and approval paths.
+packages/app/src/screens/activity/src/useSendCollectible.ts Background send call plus local cache cleanup; the transfer is built and checked by the listed background handlers.
+packages/app/src/screens/points/index.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/points/src/PointsTokenRow.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/points/src/PointsView.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/points/src/RecentEarnings.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/points/src/recentDays.ts A screen outside the key, signing and approval paths.
+packages/app/src/screens/points/src/SharePrompt.ts A screen outside the key, signing and approval paths.
+packages/app/src/screens/points/src/useCountUp.ts A screen outside the key, signing and approval paths.
+packages/app/src/screens/points/src/useFlash.ts A screen outside the key, signing and approval paths.
+packages/app/src/screens/points/src/useScanStats.ts A screen outside the key, signing and approval paths.
+packages/app/src/screens/manage-tokens/index.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/manage-tokens/src/ManageTokensView.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/receive/index.tsx Route entry; mounts ReceiveView, which is listed.
+packages/app/src/screens/send/index.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/send/src/SendCollectibleView.tsx The collectible send form; transfer-review (listed) shows what is sent and the background checks it.
+packages/app/src/screens/settings-home/index.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/settings-home/src/AppearanceView.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/settings-home/src/SettingsHomeView.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/settings-home/src/AboutBuild.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/settings-home/src/useTheme.ts A screen outside the key, signing and approval paths.
+packages/app/src/screens/wallet-detail/index.tsx Route entry; mounts WalletDetailView, which is listed.
+packages/app/src/screens/wallet-switcher/index.tsx A screen outside the key, signing and approval paths.
+packages/app/src/screens/wallet-switcher/src/WalletSwitcherView.tsx Wallet list and switch buttons; switching is the listed wallet-lifecycle handler.
+apps/mobile/src/adapters/back-button.ts Android back-button handling; an unused press minimises the app instead of closing it, keeping the unlocked session.
+apps/mobile/src/adapters/qr-scanner.ts Barcode plugin wrapper; scanned text is validated by the listed send form and shown by transfer-review.
+apps/mobile/src/adapters/store-review.ts Store review prompt; the system decides whether anything shows.
+apps/mobile/src/preview/index.ts Throwaway preview ports with an in-memory store; nothing persists.
