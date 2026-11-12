@@ -111,6 +111,9 @@
 /packages/core/src/models/serialize.ts                                     @skyf0xx
 /packages/core/src/models/grant.ts                                         @skyf0xx
 /packages/core/src/models/permission.ts                                    @skyf0xx
+/packages/app/src/screens/browser/src/BrowserView.tsx                     @skyf0xx
+/packages/app/src/screens/browser/src/address.ts                          @skyf0xx
+/apps/mobile/src/adapters/dapp-browser.ts                                 @skyf0xx
 
 # 4 What you see is what you sign
 /packages/runtime/src/handlers/approval.ts                                 @skyf0xx
@@ -141,6 +144,7 @@
 /packages/app/src/address-identity.tsx                                     @skyf0xx
 /packages/app/src/account-avatar.ts                                        @skyf0xx
 /packages/ui/src/components/wallet/AccountAvatar.tsx                       @skyf0xx
+/packages/app/src/screens/receive/src/ReceiveView.tsx                     @skyf0xx
 
 # 5 Other ways in: extension config, dependencies, CI, the release gate
 /packages/app/src/screens/network-peers/                                    @skyf0xx
@@ -199,3 +203,8 @@
 /scripts/surface-check.mjs                                                 @skyf0xx
 /apps/extension/build-plugins.ts                                           @skyf0xx
 /scripts/check-bundles.mjs                                                 @skyf0xx
+/eslint.config.js                                                         @skyf0xx
+/vitest.config.ts                                                         @skyf0xx
+/osv-scanner.toml                                                         @skyf0xx
+/apps/extension/src/shims/function-bind.cjs                               @skyf0xx
+/.semgrepignore                                                           @skyf0xx
