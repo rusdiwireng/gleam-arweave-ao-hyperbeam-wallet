@@ -9,7 +9,8 @@ const ROOT = resolve(import.meta.dirname, "..");
 
 /**
  * The entry points whose imports decide what is signed, what the approval
- * preview shows, where keys live and what a page can reach.
+ * preview shows, where keys live, what a page can reach, and what the
+ * main wallet UI shows.
  */
 const ROOTS = [
   "apps/extension/entrypoints/background/index.ts",
@@ -25,6 +26,9 @@ const ROOTS = [
   "apps/extension/entrypoints/approval/index.tsx",
   "apps/extension/entrypoints/passkey/index.tsx",
   "apps/extension/entrypoints/connect/index.tsx",
+  "apps/extension/entrypoints/popup/index.tsx",
+  "apps/extension/entrypoints/sidepanel/index.tsx",
+  "apps/mobile/src/main.tsx",
 ];
 
 interface Exemption {

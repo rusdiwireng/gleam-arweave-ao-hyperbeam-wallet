@@ -116,6 +116,9 @@
 3 packages/core/src/models/serialize.ts
 3 packages/core/src/models/grant.ts
 3 packages/core/src/models/permission.ts
+3 packages/app/src/screens/browser/src/BrowserView.tsx
+3 packages/app/src/screens/browser/src/address.ts
+3 apps/mobile/src/adapters/dapp-browser.ts
 
 4 packages/runtime/src/handlers/approval.ts
 4 apps/extension/entrypoints/approval/
@@ -145,6 +148,7 @@
 4 packages/app/src/address-identity.tsx
 4 packages/app/src/account-avatar.ts
 4 packages/ui/src/components/wallet/AccountAvatar.tsx
+4 packages/app/src/screens/receive/src/ReceiveView.tsx
 
 5 packages/app/src/screens/network-peers/
 5 packages/runtime/src/points-invite.ts
@@ -202,3 +206,8 @@
 5 scripts/surface-check.mjs
 5 apps/extension/build-plugins.ts
 5 scripts/check-bundles.mjs
+5 eslint.config.js
+5 vitest.config.ts
+5 osv-scanner.toml
+5 apps/extension/src/shims/function-bind.cjs
+5 .semgrepignore
